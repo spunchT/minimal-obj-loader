@@ -65,9 +65,9 @@ int main()
     glDisable(GL_CULL_FACE);
 
     // load shader and mesh
-    Shader shader("vertex.vert", "fragment.frag");
+    Shader shader("assets/shaders/vertex.vert", "assets/shaders/fragment.frag");
     Loader loader;
-    loader.GetVertices("assets/human.obj");
+    loader.GetVertices("assets/models/human.obj");
     Renderer mesh(loader.vertices, loader.indices);
 
     // model and projection setup
